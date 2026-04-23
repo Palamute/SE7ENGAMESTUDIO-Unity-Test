@@ -357,6 +357,60 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &193843142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+  m_PrefabInstance: {fileID: 1810202107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &193843147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193843142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21011d698777134f971a9f885a03f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallController
+  playerTransform: {fileID: 2075938633}
+  kickButtonUI: {fileID: 1378374063}
+  cameraController: {fileID: 874298414}
+  confettiPrefab: {fileID: 6661073620808731575, guid: 7d05e4127f42c914aa5d5902442e058e, type: 3}
+  goals:
+  - {fileID: 278375744}
+  - {fileID: 1798278611}
+  detectionRadius: 3
+  kickForce: 15
+  cameraReturnDelay: 2
+--- !u!54 &193843148
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193843142}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &278375744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5379469326095955536, guid: f3059fe87515fa740afe2ac7e9819671, type: 3}
@@ -445,7 +499,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504863111}
+      - m_Target: {fileID: 1022172692}
         m_TargetAssemblyTypeName: BallController, Assembly-CSharp
         m_MethodName: OnAutoKickButton
         m_Mode: 1
@@ -495,6 +549,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358212367}
   m_CullTransparentMesh: 1
+--- !u!1 &459403440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+  m_PrefabInstance: {fileID: 919129311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &459403445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459403440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21011d698777134f971a9f885a03f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallController
+  playerTransform: {fileID: 2075938633}
+  kickButtonUI: {fileID: 1378374063}
+  cameraController: {fileID: 874298414}
+  confettiPrefab: {fileID: 6661073620808731575, guid: 7d05e4127f42c914aa5d5902442e058e, type: 3}
+  goals:
+  - {fileID: 278375744}
+  - {fileID: 1798278611}
+  detectionRadius: 3
+  kickForce: 15
+  cameraReturnDelay: 2
+--- !u!54 &459403446
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459403440}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &546986454
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +647,60 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &628900536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+  m_PrefabInstance: {fileID: 1457115052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &628900541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628900536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21011d698777134f971a9f885a03f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallController
+  playerTransform: {fileID: 2075938633}
+  kickButtonUI: {fileID: 1378374063}
+  cameraController: {fileID: 874298414}
+  confettiPrefab: {fileID: 6661073620808731575, guid: 7d05e4127f42c914aa5d5902442e058e, type: 3}
+  goals:
+  - {fileID: 278375744}
+  - {fileID: 1798278611}
+  detectionRadius: 3
+  kickForce: 15
+  cameraReturnDelay: 2
+--- !u!54 &628900542
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628900536}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &843752420
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,11 +903,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d16e830e2ccf0ad4e8ddc60f56190276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  target: {fileID: 2075938633}
+  playerTarget: {fileID: 2075938633}
   offset: {x: 0, y: 12, z: -6}
   followSpeed: 8
-  followingBall: 0
-  ball: {fileID: 0}
 --- !u!1001 &919129311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -817,7 +977,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 459403446}
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 459403445}
   m_SourcePrefab: {fileID: 100100000, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
 --- !u!1 &1022172681 stripped
 GameObject:
@@ -872,6 +1038,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1022172692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022172681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f21011d698777134f971a9f885a03f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BallController
+  playerTransform: {fileID: 2075938633}
+  kickButtonUI: {fileID: 1378374063}
+  cameraController: {fileID: 874298414}
+  confettiPrefab: {fileID: 6661073620808731575, guid: 7d05e4127f42c914aa5d5902442e058e, type: 3}
+  goals:
+  - {fileID: 278375744}
+  - {fileID: 1798278611}
+  detectionRadius: 3
+  kickForce: 15
+  cameraReturnDelay: 2
 --- !u!1 &1378180061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,6 +1272,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1022172692}
+        m_TargetAssemblyTypeName: BallController, Assembly-CSharp
+        m_MethodName: OnKickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 193843147}
+        m_TargetAssemblyTypeName: BallController, Assembly-CSharp
+        m_MethodName: OnKickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 628900541}
+        m_TargetAssemblyTypeName: BallController, Assembly-CSharp
+        m_MethodName: OnKickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 459403445}
+        m_TargetAssemblyTypeName: BallController, Assembly-CSharp
+        m_MethodName: OnKickButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1378374065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,7 +1449,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 628900542}
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 628900541}
   m_SourcePrefab: {fileID: 100100000, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
 --- !u!1 &1504863095 stripped
 GameObject:
@@ -1261,14 +1503,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BallController
   playerTransform: {fileID: 2075938633}
   kickButtonUI: {fileID: 1378374063}
-  confettiEffect: {fileID: 4240034784475640689, guid: 7d05e4127f42c914aa5d5902442e058e, type: 3}
   cameraController: {fileID: 874298414}
-  detectionRadius: 2
-  kickForce: 15
-  cameraReturnDelay: 2
+  confettiPrefab: {fileID: 6661073620808731575, guid: 7d05e4127f42c914aa5d5902442e058e, type: 3}
   goals:
   - {fileID: 278375744}
   - {fileID: 1798278611}
+  detectionRadius: 2
+  kickForce: 15
+  cameraReturnDelay: 2
 --- !u!1001 &1677826006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,6 +1659,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1022172686}
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1022172692}
   m_SourcePrefab: {fileID: 100100000, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
 --- !u!4 &1798278611 stripped
 Transform:
@@ -1494,7 +1739,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 193843148}
+    - targetCorrespondingSourceObject: {fileID: 1975457108487340, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 193843147}
   m_SourcePrefab: {fileID: 100100000, guid: ec3e8f3ed27e2244caaedaf589590a03, type: 3}
 --- !u!1 &1843626655
 GameObject:
