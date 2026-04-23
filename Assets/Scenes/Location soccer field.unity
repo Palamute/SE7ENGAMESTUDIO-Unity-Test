@@ -499,7 +499,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1022172692}
+      - m_Target: {fileID: 459403445}
         m_TargetAssemblyTypeName: BallController, Assembly-CSharp
         m_MethodName: OnAutoKickButton
         m_Mode: 1
